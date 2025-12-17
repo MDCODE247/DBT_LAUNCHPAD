@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: customer_orders
+    description: "Order-level customer data"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        tests:
+          - not_null
+
+  - name: order_revenue
+    description: "Revenue aggregated per order"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+      - name: revenue
+        tests:
+          - not_null

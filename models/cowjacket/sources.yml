@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: cowjacket_raw
+    database: cowjacket
+    schema: raw
+    tables:
+      - name: customers
+      - name: products
+      - name: orders
+      - name: order_items
+      - name: loyalty_points
